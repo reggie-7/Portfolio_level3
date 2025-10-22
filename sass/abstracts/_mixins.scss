@@ -1,0 +1,9 @@
+//Mixins
+
+//Mixins allow you to define styles that can be re-used throughout your stylesheet.
+
+@mixin rotated($radius) {
+      -webkit-transform: rotate($radius);
+      -ms-transform: rotate($radius);
+       transform: rotate($radius);
+ }

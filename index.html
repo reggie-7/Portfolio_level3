@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabin | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/grid.css"> 
+    <link rel="stylesheet" href="css/main.css"> 
+</head>
+<body>
+    
+    <header class="main-header" id="top">
+        <div class="grid-con">
+            <div class="logo col-span-2 m-col-span-3 l-col-span-2">
+                <a href="#top">
+                    <img src="/images/logo.svg" alt="Rabin Logo" class="logo-img">
+                </a>
+            </div>
+            
+            <button class="mobile-menu-toggle col-span-2 m-col-span-1" id="menuToggle" aria-label="Toggle Navigation">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="main-nav col-span-4 m-col-span-8 l-col-span-10" id="mainNav">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        
+        <section class="hero-section" id="home">
+            <div class="hero-bg">
+                <img src="images/b&w.jpg" alt="Hero Background" class="hero-image">
+            </div>
+            <div class="grid-con">
+                <div class="hero-content col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
+                    <h1 class="hero-title">Hello, I'm <span class="highlight">Rabin</span></h1>
+                    <p class="hero-tagline">Designer. Developer. Storyteller.</p>
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <div class="grid-con">
+                <h2 class="section-title col-span-full">Featured Showreel</h2>
+                
+                <div class="video-container col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
+                    <video id="portfolioVideo" class="portfolio-video" controls poster="images/video-poster.jpg">
+                        <source src="video/showreel.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="grid-con">
+                <h2 class="section-title col-span-full">About Me</h2>
+                <article class="bio-text col-span-4 m-col-span-7 l-col-span-6">
+                    <h2 class="hidden">Bio</h2>
+                    <p>I'm a multimedia designer and developer passionate about creating engaging digital experiences. With expertise in both design and code, I bring ideas to life through thoughtful craftsmanship and attention to detail.</p>
+                    <p>My work spans web development, motion graphics, 3D design, and interactive media. I believe in the power of design to solve problems and tell compelling stories.</p>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </article>
+                
+                <aside class="skills-summary col-span-4 m-col-span-5 l-col-span-6">
+                    <h3>Core Skills</h3>
+                    <ul class="skills-list">
+                        <li>HTML5 / CSS3 / SASS</li>
+                        <li>JavaScript / GSAP</li>
+                        <li>PHP / MySQL</li>
+                        <li>After Effects</li>
+                        <li>Figma / Photoshop</li>
+                        <li>3D Modeling</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+        
+        <section class="projects-section" id="projects">
+            <div class="grid-con">
+                <h2 class="section-title col-span-full">Featured Work</h2>
+                
+                <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
+                    <div class="project-image">
+                        <img src="images/project1.jpg" alt="Project 1">
+                        <div class="project-overlay">
+                            <a href="#project1" class="view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title One</h3>
+                        <p class="project-category">Web Development / UX Design</p>
+                        <p class="project-description">A brief description of this project and the problem it solves or the story it tells.</p>
+                    </div>
+                </article>
+
+                <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
+                    <div class="project-image">
+                        <img src="images/project2.jpg" alt="Project 2">
+                        <div class="project-overlay">
+                            <a href="#project2" class="view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title Two</h3>
+                        <p class="project-category">Motion Graphics / 3D</p>
+                        <p class="project-description">A brief description of this project and the creative process behind it.</p>
+                    </div>
+                </article>
+
+                <article class="project-card col-span-4 m-col-span-12 l-col-span-4">
+                    <div class="project-image">
+                        <img src="images/project3.jpg" alt="Project 3">
+                        <div class="project-overlay">
+                            <a href="#project3" class="view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Project Title Three</h3>
+                        <p class="project-category">Interactive Media</p>
+                        <p class="project-description">A brief description showcasing the interactive elements and user experience.</p>
+                    </div>
+                </article>
+                
+                <div class="col-span-full view-all-container">
+                    <a href="#all-projects" class="btn btn-outline">See All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <div class="grid-con">
+                <h2 class="section-title col-span-full">Let's Work Together</h2>
+                
+                <div class="contact-content col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
+                    <p class="contact-intro">Have a project in mind? I'd love to hear about it. Drop me a message and let's create something amazing together.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="grid-con">
+            <div class="footer-content col-span-4 m-col-span-8 l-col-span-8">
+                <p class="copyright">&copy;2025 Rabin. All rights reserved.</p>
+            </div>
+            <div class="social-links col-span-4 m-col-span-4 l-col-span-4">
+                <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                <a href="#" aria-label="GitHub">GitHub</a>
+                <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
