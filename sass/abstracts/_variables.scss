@@ -1,23 +1,16 @@
-// scss/abstracts/_variables.scss
+$color-primary-bg: #000000;
+$color-secondary-bg: #111111;
+$color-text: #ffffff;
+$color-sub-text: #cccccc;
+$color-accent: #7d5ba6;
 
-// --- Color Palette (Dark-Mode Purple) ---
-// Defined based on your design analysis:
-$color-primary-bg: #000000;         // Primary Background
-$color-secondary-bg: #111;          // Secondary Background (for cards/sections)
-$color-text: #ffffff;               // Primary Text (White)
-$color-sub-text: #ccc;              // Tagline text color (Light Gray)
-$color-accent: #7d5ba6;             // Accent/Action (Medium Purple/Indigo)
-
-// --- Typography Settings (Montserrat & Lato) ---
 $heading-font-family: 'Montserrat', sans-serif;
 $body-font-family: 'Lato', sans-serif;
 
-// Specific Font Sizes defined in analysis
 $font-size-h1: 48px;
+$font-size-h2: 40px;
 $font-size-h3: 22px;
-$font-size-tagline: 20px;
 
-// --- Sizing & Spacing (Good practice for components) ---
 $spacing-sm: 16px;
 $spacing-md: 32px;
 $spacing-lg: 64px;
