@@ -1,1 +1,49 @@
-@use '../abstracts' as a;
+@use '../abstracts/variables' as v;
+
+.main-footer {
+    background-color: v.$color-secondary-bg;
+    padding: v.$spacing-lg 0 v.$spacing-md;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo {
+    height: 40px;
+    margin-bottom: v.$spacing-sm;
+}
+
+.footer-tagline {
+    color: v.$color-sub-text;
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: v.$color-text;
+    font-size: 14px;
+}
+
+.footer-bottom {
+    margin-top: v.$spacing-md;
+    padding-top: v.$spacing-md;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+.copyright {
+    color: v.$color-sub-text;
+    font-size: 14px;
+    margin: 0;
+}

@@ -1,1 +1,62 @@
 @use '../abstracts/variables' as v;
+
+body {
+    font-family: v.$body-font-family;
+    font-size: 16px;
+    line-height: 1.6;
+    color: v.$color-text;
+    background-color: v.$color-primary-bg;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: v.$heading-font-family;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 v.$spacing-sm 0;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: v.$font-size-h3;
+}
+
+p {
+    margin: 0 0 v.$spacing-sm 0;
+}
+
+a {
+    color: v.$color-accent;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: lighten(v.$color-accent, 15%);
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: v.$font-size-h1;
+    }
+    
+    h2 {
+        font-size: v.$font-size-h2;
+    }
+}

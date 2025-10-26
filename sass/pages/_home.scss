@@ -1,1 +1,287 @@
-@use '../abstracts' as a;
+@use '../abstracts/variables' as v;
+
+section {
+    padding: v.$spacing-lg 0;
+}
+
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    padding: v.$spacing-md 0;
+}
+
+.hero-eyebrow {
+    color: v.$color-accent;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin-bottom: v.$spacing-sm;
+}
+
+.hero-tagline {
+    font-size: 20px;
+    color: v.$color-sub-text;
+    margin-bottom: v.$spacing-sm;
+}
+
+.hero-cta {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: v.$spacing-md;
+}
+
+.hero-image-wrapper {
+    margin-top: v.$spacing-md;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.showcase-section {
+    background-color: v.$color-secondary-bg;
+}
+
+.section-title-left {
+    margin-bottom: v.$spacing-md;
+}
+
+.portfolio-video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.stats-list {
+    list-style: none;
+    padding: 0;
+    margin-top: v.$spacing-md;
+}
+
+.stats-list li {
+    margin-bottom: v.$spacing-md;
+}
+
+.stat-number {
+    display: block;
+    font-size: 36px;
+    font-weight: 700;
+    color: v.$color-accent;
+}
+
+.stat-label {
+    display: block;
+    color: v.$color-sub-text;
+}
+
+.about-section {
+    background-color: v.$color-primary-bg;
+}
+
+.about-lead {
+    font-size: 18px;
+    color: v.$color-sub-text;
+    margin-bottom: v.$spacing-md;
+}
+
+.skills-grid {
+    display: grid;
+    gap: v.$spacing-md;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects-section {
+    background-color: v.$color-secondary-bg;
+}
+
+.section-title-center {
+    text-align: center;
+    margin-bottom: v.$spacing-sm;
+}
+
+.projects-intro {
+    text-align: center;
+    color: v.$color-sub-text;
+    margin-bottom: v.$spacing-lg;
+}
+
+.project-card {
+    margin-bottom: v.$spacing-md;
+}
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: v.$spacing-sm;
+    padding-bottom: 62.5%;
+    background-color: #222;
+}
+
+.project-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+
+.project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(125, 91, 166, 0.9), rgba(0, 0, 0, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.project-image:hover .project-overlay {
+    opacity: 1;
+}
+
+.view-project-btn {
+    padding: 12px 32px;
+    background-color: v.$color-text;
+    color: v.$color-primary-bg;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.project-category {
+    color: v.$color-accent;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.project-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background-color: v.$color-accent;
+    color: v.$color-text;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: v.$spacing-md;
+}
+
+.contact-section {
+    background-color: v.$color-primary-bg;
+}
+
+.contact-description {
+    color: v.$color-sub-text;
+    margin-bottom: v.$spacing-md;
+}
+
+.contact-details {
+    margin-top: v.$spacing-md;
+}
+
+.contact-form-wrapper {
+    margin-top: v.$spacing-md;
+}
+
+.contact-form {
+    margin-top: v.$spacing-md;
+}
+
+.form-group {
+    margin-bottom: v.$spacing-md;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: v.$color-secondary-bg;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    color: v.$color-text;
+    font-family: v.$body-font-family;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: v.$color-accent;
+}
+
+.contact-methods {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-methods li {
+    margin-bottom: v.$spacing-sm;
+}
+
+.contact-label {
+    display: block;
+    font-size: 14px;
+    color: v.$color-sub-text;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .hero-title {
+        font-size: v.$font-size-h1;
+    }
+    
+    .hero-image-wrapper {
+        margin-top: 0;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+}

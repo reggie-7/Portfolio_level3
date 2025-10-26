@@ -10,11 +10,13 @@
 </head>
 <body>
     
+    <h1 class="hidden">Rabin Portfolio</h1>
+
     <header class="main-header" id="top">
         <div class="grid-con">
             <div class="logo col-span-2 m-col-span-3 l-col-span-2">
                 <a href="#top">
-                    <img src="/images/logo.svg" alt="Rabin Logo" class="logo-img">
+                    <img src="images/logo.svg" alt="Rabin Logo" class="logo-img">
                 </a>
             </div>
             
@@ -24,9 +26,11 @@
                 <span class="hamburger-line"></span>
             </button>
 
-            <nav class="main-nav col-span-4 m-col-span-8 l-col-span-10" id="mainNav">
+            <nav class="main-nav col-span-4 m-col-span-8 l-col-span-10" id="mainNav" aria-label="Main Navigation">
+                <h2 class="hidden">Main Navigation</h2>
                 <ul class="nav-list">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#showcase">Showcase</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -38,124 +42,207 @@
     <main>
         
         <section class="hero-section" id="home">
-            <div class="hero-bg">
-                <img src="images/b&w.jpg" alt="Hero Background" class="hero-image">
-            </div>
+            <h2 class="hidden">Introduction</h2>
             <div class="grid-con">
-                <div class="hero-content col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
-                    <h1 class="hero-title">Hello, I'm <span class="highlight">Rabin</span></h1>
+                <div class="hero-text col-span-4 m-col-span-6 l-col-span-5">
+                    <p class="hero-eyebrow">Portfolio 2025</p>
+                    <h3 class="hero-title">Hello, I'm <span class="highlight">Rabin</span></h3>
                     <p class="hero-tagline">Designer. Developer. Storyteller.</p>
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <p class="hero-description">I create digital experiences that blend creativity with functionality. From web development to motion design, I bring ideas to life.</p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper col-span-4 m-col-span-6 l-col-span-7">
+                    <img src="images/b&w.jpg" alt="Rabin workspace" class="hero-image">
                 </div>
             </div>
         </section>
 
-        <section class="video-section">
+        <section class="showcase-section" id="showcase">
             <div class="grid-con">
-                <h2 class="section-title col-span-full">Featured Showreel</h2>
-                
-                <div class="video-container col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
-                    <video id="portfolioVideo" class="portfolio-video" controls poster="images/video-poster.jpg">
-                        <source src="video/showreel.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                
+                <div class="showcase-video col-span-4 m-col-span-7 l-col-span-8">
+                    <h2 class="section-title-left">Featured Showreel</h2>
+                    <div class="video-container">
+                        <video id="portfolioVideo" class="portfolio-video" controls poster="images/video-poster.jpg">
+                            <source src="video/showreel.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
+                
+                <aside class="showcase-stats col-span-4 m-col-span-5 l-col-span-4">
+                    <h3>Quick Stats</h3>
+                    <ul class="stats-list">
+                        <li>
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </li>
+                        <li>
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </li>
+                        <li>
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Client Satisfaction</span>
+                        </li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
         <section class="about-section" id="about">
             <div class="grid-con">
-                <h2 class="section-title col-span-full">About Me</h2>
-                <article class="bio-text col-span-4 m-col-span-7 l-col-span-6">
-                    <h2 class="hidden">Bio</h2>
-                    <p>I'm a multimedia designer and developer passionate about creating engaging digital experiences. With expertise in both design and code, I bring ideas to life through thoughtful craftsmanship and attention to detail.</p>
-                    <p>My work spans web development, motion graphics, 3D design, and interactive media. I believe in the power of design to solve problems and tell compelling stories.</p>
-                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                <div class="about-intro col-span-4 m-col-span-12 l-col-span-6">
+                    <h2 class="section-title-left">About Me</h2>
+                    <p class="about-lead">I'm a multimedia designer and developer passionate about creating engaging digital experiences.</p>
+                </div>
+                
+                <article class="bio-content col-span-4 m-col-span-7 l-col-span-6">
+                    <h3>My Approach</h3>
+                    <p>With expertise in both design and code, I bring ideas to life through thoughtful craftsmanship and attention to detail. My work spans web development, motion graphics, 3D design, and interactive media.</p>
+                    <p>I believe in the power of design to solve problems and tell compelling stories. Every project is an opportunity to push creative boundaries while delivering results that matter.</p>
                 </article>
                 
                 <aside class="skills-summary col-span-4 m-col-span-5 l-col-span-6">
                     <h3>Core Skills</h3>
-                    <ul class="skills-list">
-                        <li>HTML5 / CSS3 / SASS</li>
-                        <li>JavaScript / GSAP</li>
-                        <li>PHP / MySQL</li>
-                        <li>After Effects</li>
-                        <li>Figma / Photoshop</li>
-                        <li>3D Modeling</li>
-                    </ul>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Development</h4>
+                            <ul class="skills-list">
+                                <li>HTML5 / CSS3 / SASS</li>
+                                <li>JavaScript / GSAP</li>
+                                <li>PHP / MySQL</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Design</h4>
+                            <ul class="skills-list">
+                                <li>After Effects</li>
+                                <li>Figma / Photoshop</li>
+                                <li>3D Modeling</li>
+                            </ul>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
         
         <section class="projects-section" id="projects">
             <div class="grid-con">
-                <h2 class="section-title col-span-full">Featured Work</h2>
+                <div class="projects-header col-span-full">
+                    <h2 class="section-title-center">Featured Work</h2>
+                    <p class="projects-intro">A selection of projects that showcase my skills across design and development</p>
+                </div>
                 
-                <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
+                <article class="project-card project-featured col-span-4 m-col-span-12 l-col-span-8">
                     <div class="project-image">
-                        <img src="images/project1.jpg" alt="Project 1">
+                        <img src="images/project1.jpg" alt="Featured Project">
                         <div class="project-overlay">
                             <a href="#project1" class="view-project-btn">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title One</h3>
+                        <span class="project-tag">Featured</span>
+                        <h3>Major E-Commerce Platform</h3>
                         <p class="project-category">Web Development / UX Design</p>
-                        <p class="project-description">A brief description of this project and the problem it solves or the story it tells.</p>
+                        <p class="project-description">A comprehensive e-commerce solution built with modern web technologies, featuring custom animations and seamless user experience.</p>
                     </div>
                 </article>
 
                 <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
                     <div class="project-image">
-                        <img src="images/project2.jpg" alt="Project 2">
+                        <img src="images/project2.jpg" alt="Motion Graphics Project">
                         <div class="project-overlay">
                             <a href="#project2" class="view-project-btn">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title Two</h3>
+                        <h3>Brand Animation Suite</h3>
                         <p class="project-category">Motion Graphics / 3D</p>
-                        <p class="project-description">A brief description of this project and the creative process behind it.</p>
+                        <p class="project-description">Dynamic brand animations created for social media and digital campaigns.</p>
                     </div>
                 </article>
 
-                <article class="project-card col-span-4 m-col-span-12 l-col-span-4">
+                <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
                     <div class="project-image">
-                        <img src="images/project3.jpg" alt="Project 3">
+                        <img src="images/project3.jpg" alt="Interactive Experience">
                         <div class="project-overlay">
                             <a href="#project3" class="view-project-btn">View Project</a>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Project Title Three</h3>
-                        <p class="project-category">Interactive Media</p>
-                        <p class="project-description">A brief description showcasing the interactive elements and user experience.</p>
+                        <h3>Interactive Product Showcase</h3>
+                        <p class="project-category">Interactive Media / 3D</p>
+                        <p class="project-description">An immersive 3D product experience with real-time interactions.</p>
+                    </div>
+                </article>
+
+                <article class="project-card col-span-4 m-col-span-6 l-col-span-4">
+                    <div class="project-image">
+                        <img src="images/project4.jpg" alt="Mobile App Design">
+                        <div class="project-overlay">
+                            <a href="#project4" class="view-project-btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Fitness Tracking App</h3>
+                        <p class="project-category">UI/UX Design / Development</p>
+                        <p class="project-description">Mobile-first design with intuitive user interface and smooth animations.</p>
                     </div>
                 </article>
                 
                 <div class="col-span-full view-all-container">
-                    <a href="#all-projects" class="btn btn-outline">See All Projects</a>
+                    <a href="#all-projects" class="btn btn-outline">View All Projects</a>
                 </div>
             </div>
         </section>
 
         <section class="contact-section" id="contact">
             <div class="grid-con">
-                <h2 class="section-title col-span-full">Let's Work Together</h2>
-                
-                <div class="contact-content col-span-4 m-col-span-10 m-col-start-2 l-col-span-8 l-col-start-3">
-                    <p class="contact-intro">Have a project in mind? I'd love to hear about it. Drop me a message and let's create something amazing together.</p>
+                <div class="contact-info col-span-4 m-col-span-5 l-col-span-4">
+                    <h2 class="section-title-left">Let's Work Together</h2>
+                    <p class="contact-description">Have a project in mind? I'd love to hear about it. Whether you need a website, motion graphics, or interactive experience, let's create something amazing together.</p>
                     
+                    <div class="contact-details">
+                        <h3>Get In Touch</h3>
+                        <ul class="contact-methods">
+                            <li>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:rabin@example.com">rabin@example.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">Location</span>
+                                <span>Toronto, ON</span>
+                            </li>
+                            <li>
+                                <span class="contact-label">Availability</span>
+                                <span>Open for projects</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper col-span-4 m-col-span-7 l-col-span-8">
+                    <h3>Send a Message</h3>
                     <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
                         </div>
                         
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
                         </div>
                         
                         <div class="form-group">
@@ -173,13 +260,34 @@
 
     <footer class="main-footer">
         <div class="grid-con">
-            <div class="footer-content col-span-4 m-col-span-8 l-col-span-8">
-                <p class="copyright">&copy;2025 Rabin. All rights reserved.</p>
+            <div class="footer-brand col-span-4 m-col-span-6 l-col-span-4">
+                <img src="images/logo.svg" alt="Rabin Logo" class="footer-logo">
+                <p class="footer-tagline">Creating digital experiences that matter.</p>
             </div>
-            <div class="social-links col-span-4 m-col-span-4 l-col-span-4">
-                <a href="#" aria-label="LinkedIn">LinkedIn</a>
-                <a href="#" aria-label="GitHub">GitHub</a>
-                <a href="#" aria-label="Instagram">Instagram</a>
+            
+            <nav class="footer-nav col-span-4 m-col-span-6 l-col-span-4" aria-label="Footer Navigation">
+                <h2 class="hidden">Footer Navigation</h2>
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="footer-social col-span-4 m-col-span-12 l-col-span-4">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="#" aria-label="GitHub">GitHub</a>
+                    <a href="#" aria-label="Instagram">Instagram</a>
+                    <a href="#" aria-label="Behance">Behance</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom col-span-full">
+                <p class="copyright">&copy; 2025 Rabin. All rights reserved.</p>
             </div>
         </div>
     </footer>

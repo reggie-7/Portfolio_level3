@@ -1,1 +1,36 @@
-@use '../abstracts' as a;
+@use '../abstracts/variables' as v;
+
+.btn {
+    display: inline-block;
+    padding: 14px 32px;
+    font-family: v.$heading-font-family;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.btn-primary {
+    background-color: v.$color-accent;
+    color: v.$color-text;
+    border-color: v.$color-accent;
+}
+
+.btn-primary:hover {
+    background-color: lighten(v.$color-accent, 10%);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: v.$color-text;
+    border-color: v.$color-text;
+}
+
+.btn-outline:hover {
+    background-color: v.$color-text;
+    color: v.$color-primary-bg;
+}
